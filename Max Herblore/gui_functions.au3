@@ -1,9 +1,12 @@
+#include <runescape_functions.au3>
 #include <GUIbot.au3>
 
 sleep(300)
 MakeGui("Harvester", "LAUNCHING", 0)
 MsgBox(0x30, "RadiusZero", "Launching Harvester, Press F4 to Stop.")
 sleep(1000)
+view_reset()
+sleep(4000)
 GUICtrlSetData($Stat_L, "LAUNCHING 5..")
 sleep(1000)
 GUICtrlSetData($Stat_L, "LAUNCHING 4..")
