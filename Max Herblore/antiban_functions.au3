@@ -4,11 +4,11 @@
 ;
 #include <base_functions.au3>
 
-$x_pot = 1702
-$y_pot = 693
+$x_pott = 1699
+$y_pott = 701
 Func check_out()
-   _ConvertXY($x_pot, $y_pot)
-   $pixels = PixelSearch($x_pot-1, $y_pot-1, $x_pot+1, $y_pot+1,0x081A24,20)			;Scan 1st inventory slot pixel.
+   _ConvertXY($x_pott, $y_pott)
+   $pixels = PixelSearch($x_pott, $y_pott, $x_pott, $y_pott,0x061820,1)			;Scan 1st inventory slot pixel.
    if NOT(@error) Then
 	  MsgBox(0x30, "RadiusZero - Antiban", "We have run out of ingredients, STOPPING.")
 	  exit 1
